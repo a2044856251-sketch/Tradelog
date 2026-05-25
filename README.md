@@ -1,50 +1,43 @@
 # TradeLog
 
-A single-file crypto trading journal web app. No build step, no server — just open `index.html` in a browser.
+加密货币交易日志工具。单文件、纯前端，打开 `index.html` 即用。
 
-Built with vanilla HTML/CSS/JS by a self-taught developer who trades crypto and builds AI tools.
+## 功能
 
-## Features
+- **离线可用** — 数据通过 IndexedDB（Dexie.js）存储在本地浏览器，不联网、不上传
+- **统计面板** — 胜率、盈亏、R 倍数、期望值等
+- **图表** — 净值曲线、盈亏分布、日历热力图（Chart.js）
+- **截图附件** — 支持为每笔交易附加图表截图，自动压缩
+- **备份/恢复** — JSON 格式导出导入全部记录
+- **自定义品种和形态** — 可编辑的下拉选项，持久化在 localStorage
+- **暗色 UI** — 毛玻璃 + Morandi 配色
 
-- **Offline-first** — All data stored locally via IndexedDB (Dexie.js). Nothing leaves your machine.
-- **Stats dashboard** — Win rate, P&L, R-multiple, expectancy, and more
-- **Charts** — Equity curve, P&L distribution, win/loss calendar heatmap (Chart.js)
-- **Screenshot support** — Attach chart screenshots to trades with automatic compression
-- **Backup/restore** — Export/import all trades as JSON
-- **Custom symbols & patterns** — Editable dropdowns persisted in localStorage
-- **Dark UI** — Glassmorphism design, Morandi palette
+## 技术栈
 
-## Tech Stack
+| 层 | 选型 |
+|---|------|
+| 数据库 | [Dexie.js](https://dexie.org/)（IndexedDB 封装） |
+| 图表 | [Chart.js](https://www.chartjs.org/) |
+| UI | 原生 HTML/CSS/JS，除两个 CDN 脚本外零依赖 |
+| 部署 | GitHub Pages（单文件 `index.html`） |
 
-| Layer | Choice |
-|-------|--------|
-| Database | [Dexie.js](https://dexie.org/) (IndexedDB wrapper) |
-| Charts | [Chart.js](https://www.chartjs.org/) |
-| UI | Vanilla HTML/CSS/JS, zero dependencies beyond the two CDN scripts |
-| Hosting | GitHub Pages (single `index.html`) |
+## 为什么做这个
 
-## Why This Exists
+自己做交易，需要一款离线、快速、无框架依赖的日志工具。同时作为 Crypto × AI 方向的实践项目，展示交易 + 技术交叉领域的产品能力。
 
-I trade crypto and wanted a journal that:
-- Works offline with no account or cloud dependency
-- Is fast — single HTML file, loads instantly
-- I can extend myself without fighting a framework
-
-This is also part of my transition into the Crypto × AI space — demonstrating I can ship working products at the intersection of trading and technology.
-
-## Try It
+## 使用
 
 ```
 git clone https://github.com/a2044856251-sketch/Tradelog.git
-cd tradelog
+cd Tradelog
 open index.html
 ```
 
-Or deploy to GitHub Pages: Settings → Pages → Source: `main` branch, root folder.
+或部署到 GitHub Pages：Settings → Pages → Source: `main`，根目录。
 
-## Author
+## 作者
 
-**浅海** — Crypto trader, AI tool builder, self-taught developer.
+**浅海** — 加密货币交易者，AI 工具实践者。
 
-- Building at the intersection of trading, AI agents, and Web3
-- Currently seeking roles in Crypto × AI companies
+- 关注 Crypto × AI Agent 方向
+- 正在寻找 Crypto × AI 领域的产品或运营岗位
