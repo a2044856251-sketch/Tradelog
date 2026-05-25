@@ -35,7 +35,7 @@ This is also part of my transition into the Crypto × AI space — demonstrating
 ## Try It
 
 ```
-git clone https://github.com/a2044856251-sketch/tradelog.git
+git clone https://github.com/a2044856251-sketch/Tradelog.git
 cd tradelog
 open index.html
 ```
